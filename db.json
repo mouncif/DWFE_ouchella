@@ -1,0 +1,20 @@
+{
+  "Employee": [
+    {
+      "id": 1,
+      "firstName": "maryem",
+      "lastName": "ouchalla",
+      "designation": "des",
+      "contact": 65448,
+      "address": "puneee"
+    },
+    {
+      "firstName": "hh",
+      "lastName": "sx",
+      "designation": "dc",
+      "contact": "05666",
+      "id": 2,
+      "address": "sqw"
+    }
+  ]
+}
