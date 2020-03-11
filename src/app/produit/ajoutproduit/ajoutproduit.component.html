@@ -1,0 +1,76 @@
+<div class="card mb-3">
+    <div class="card-header">
+      <i class="fa fa-area-chart"></i> Produits
+    </div>
+  
+    <div class="card-body">
+      <form [formGroup]="produitService.form" (submit)="ajoutProduit()">
+        <div class="row">
+          <div class="col-md-3">
+            <label>Photo</label>
+            <img src="assets/products.png"class="img-thumbnail mb-2">
+            <input type="text" formControlName="imageproduit" name="image" class="form-control" placeholder="Photo URL">
+          </div>
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>nom produit</label>
+                  <input type="text" formControlName="nomproduit" name="nom" class="form-control" placeholder="Nom produit">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>nom Court</label>
+                  <input type="text" formControlName="nomcoproduit" name="nomCourt" class="form-control" placeholder="Nom court">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>prixBase</label>
+                  <input type="text" formControlName="prixbproduit" name="prixBase" class="form-control" placeholder="prixBase">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>prixVente</label>
+                  <input type="text" formControlName="prixventeproduit" name="prixVente" class="form-control" placeholder="prixVente">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>seuil </label>
+                  <input type="text" formControlName="seuilremiseproduit" name="maxRemise" class="form-control" placeholder="seuil remise">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>unite produit</label>
+                  <input type="text" formControlName="uniteproduit" name="unite" class="form-control" placeholder="unite">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>qteInitial</label>
+                  <input type="text" formControlName="quantiteinitialstock" name="qteInitial" class="form-control" placeholder="qteInitial">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>qteActuel</label>
+                  <input type="text" formControlName="quantiteactuelstock" name="qteActuel" class="form-control" placeholder="qteActuel">
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>

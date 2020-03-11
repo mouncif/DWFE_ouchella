@@ -1,0 +1,62 @@
+<app-navbar></app-navbar>
+<div class="wrapper d-flex align-items-stretch" style="height: 900px;">
+<app-sidebar></app-sidebar>
+<div class="container-fluid" style="background-color: brown; height: 70px;"  >
+    <div   class="breadcome-area mg-b-30 small-dn">
+        <div>
+            <div class="row" >
+                <div class="col-lg-12">
+                    <div class="breadcome-list map-mg-t-40-gl shadow-reset">
+                        <div class="row"  style="margin-top: 7px;">
+                            <div class="col-lg-6" >
+                                <div class="breadcome-heading"  style="margin-left:20px;">
+                                    <p style="color: white;"> new Client / list-Client </p> 
+                                    <p style="color: white;"> Dossier Client </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div  class="breadcome-menu">
+                                   
+                                      
+                                        <span class="fa fa-search " style="float: right; color: white;"></span>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-bottom: 10px;">
+         <button type="button"  routerLink="/home/client/ajouter" mat-button> ajouter client</button>
+         <button type="button"  routerLink="/home/client/list" mat-button> list  clients</button>
+
+         <button type="button"  routerLink="/home/fourni/ajouterr" mat-button> ajouter fournisseur</button>
+         <button type="button"  routerLink="/home/fourni/listt" mat-button> list  fournisseurs</button>
+
+         <button type="button"  routerLink="/home/produit/ajouter" mat-button> ajouter produit </button>
+         <button type="button"  routerLink="/home/produit/list" mat-button> list  produits</button>
+
+         <button type="button"  routerLink="/home/user" mat-button> list  users</button>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+<div class="container">
+<router-outlet></router-outlet>
+
+</div>
+  </div>
+</div>

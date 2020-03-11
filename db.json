@@ -1,20 +1,74 @@
 {
-  "Employee": [
+  "Client": [
     {
-      "id": 1,
-      "firstName": "maryem",
-      "lastName": "ouchalla",
-      "designation": "des",
-      "contact": 65448,
-      "address": "puneee"
+      "id": 2,
+      "nomclient": "imane",
+      "prenomclient": "naji",
+      "statutclient": "des",
+      "telclient": "puneee",
+      "emailclient": "m@hdd",
+      "adresseclient": "g",
+      "photoclient": "65448",
+      "villeclient": "mkns"
     },
     {
-      "firstName": "hh",
-      "lastName": "sx",
-      "designation": "dc",
-      "contact": "05666",
-      "id": 2,
-      "address": "sqw"
+      "id": 3,
+      "nomclient": "mery",
+      "prenomclient": "prenm",
+      "statutclient": "statut",
+      "telclient": "065555555",
+      "emailclient": "m@m.com",
+      "adresseclient": "dress",
+      "photoclient": "65448",
+      "villeclient": "mkns"
     }
+  ],
+  "Fournisseur": [
+    {
+      "id": 1,
+      "nomfournisseur": "for1",
+      "nomcourtfournisseur": "cort",
+      "villefournisseur": "ville",
+      "Adressefournisseur": "adre",
+      "Telfournisseur": "0522222",
+      "Telmobilefournisseur": "0655555",
+      "Faxfournisseur": "mkd856",
+      "emailfournisseur": "fourni@.com"
+    }
+  ],
+  "Produit": [
+    {
+      "id": 2,
+      "nomproduit": "OUCHALLA",
+      "nomcoproduit": "court",
+      "prixbproduit": "1500",
+      "prixventeproduit": "5555",
+      "seuilremiseproduit": "1500",
+      "uniteproduit": "unite",
+      "imageproduit": "https://lh3.googleusercontent.com/proxy/J9DC-RVZLbU5UeBzH8W0G6-53EnJ9smtuOvTfTLAfBaGdNLIs2Qz6ObvnyHBz083kaL2rqi7WQtICyFSqpxyMoblNJu8oo6O36Y3A2hoWKO8jblosiaAExQDk-YmeRf0tjA",
+      "quantiteinitialstock": "985555",
+      "quantiteactuelstock": "8888888888888"
+    },
+    {
+      "id": 3,
+      "nomproduit": "produit2",
+      "nomcoproduit": "court",
+      "prixbproduit": "1500",
+      "prixventeproduit": "5555",
+      "seuilremiseproduit": "1500",
+      "uniteproduit": "unite",
+      "imageproduit": "data:image/png;base64,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",
+      "quantiteinitialstock": "985555",
+      "quantiteactuelstock": "8888888888888"
+    }
+  ],
+  "user": [
+    
+    {
+      "id": 1,
+      "email": "admin@admin.com",
+      "motdpass": "123456789"
+    }
+    
   ]
 }

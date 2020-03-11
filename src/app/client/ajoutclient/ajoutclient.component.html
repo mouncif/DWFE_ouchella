@@ -1,0 +1,45 @@
+<form [formGroup]="service.form" (submit)="ajoutClient()">
+    <div class="form-group">
+      <label for="nomclient">nom client </label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer nom" formControlName="nomclient">
+    </div>
+
+    <div class="form-group">
+        <label for="prenomclient">prenom  client </label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer prenom" formControlName="prenomclient">
+      </div>
+
+      <div class="form-group">
+        <label for="statutclient">statut  client </label>
+        <input type="text " class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer statut" formControlName="statutclient">
+      </div>
+
+      <div class="form-group">
+        <label for="telclient">tel   client </label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer telephone" formControlName="telclient">
+      </div>
+
+      <div class="form-group">
+        <label for="emailclient">email    client </label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer email"  formControlName="emailclient">
+      </div>
+
+      <div class="form-group">
+        <label for=" adresseclient">addresse    client </label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer adresse" formControlName="adresseclient">
+      </div>
+
+      <div class="form-group">
+        <label for=" villeclient">ville   client </label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer ville" formControlName="villeclient">
+      </div>
+
+
+      <div class="form-group">
+        <label for="photoclient">photo   client </label>
+        <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer photo" formControlName="photoclient">
+      </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

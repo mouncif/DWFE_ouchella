@@ -1,0 +1,79 @@
+
+<div class="mat-elevation-z8" style="background-color: #ffffff; margin-top: 15px;">
+    <mat-form-field class="col-12">
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+    </mat-form-field>
+    <table mat-table [dataSource]="listData">
+
+        <!-- Position Column -->
+
+        <ng-container matColumnDef="nomproduit">
+            <th mat-header-cell *matHeaderCellDef> Nom produit</th>
+            <td mat-cell *matCellDef="let element"> {{element.nomproduit}} </td>
+        </ng-container>
+        <ng-container matColumnDef="nomcoproduit">
+            <th mat-header-cell *matHeaderCellDef> Nom  court</th>
+            <td mat-cell *matCellDef="let element"> {{element.nomcoproduit}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="prixbproduit">
+            <th mat-header-cell *matHeaderCellDef> prix base </th>
+            <td mat-cell *matCellDef="let element"> {{element.prixbproduit}} </td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="prixventeproduit">
+            <th mat-header-cell *matHeaderCellDef> prix vente </th>
+            <td mat-cell *matCellDef="let element"> {{element.prixventeproduit}} </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="seuilremiseproduit">
+            <th mat-header-cell *matHeaderCellDef> seuil </th>
+            <td mat-cell *matCellDef="let element"> {{element.seuilremiseproduit}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="uniteproduit">
+            <th mat-header-cell *matHeaderCellDef> unité  </th>
+            <td mat-cell *matCellDef="let element"> {{element.uniteproduit}} </td>
+        </ng-container>
+        
+        <ng-container matColumnDef="imageproduit" >
+            <th mat-header-cell *matHeaderCellDef> image  </th>
+            <td mat-cell *matCellDef="let element"> <img src="{{element.imageproduit}}" height="50px" width="50px"> </td>
+        </ng-container>
+
+        
+
+        <ng-container matColumnDef="quantiteinitialstock">
+            <th mat-header-cell *matHeaderCellDef> quantité initial </th>
+            <td mat-cell *matCellDef="let element"> {{element.quantiteinitialstock}} </td>
+        </ng-container>
+        <ng-container matColumnDef="quantiteactuelstock">
+            <th mat-header-cell *matHeaderCellDef> quantité  actuel</th>
+            <td mat-cell *matCellDef="let element"> {{element.quantiteactuelstock}} </td>
+        </ng-container>
+
+
+
+        <ng-container matColumnDef="actions">
+            <th mat-header-cell *matHeaderCellDef> action </th>
+            <td mat-cell *matCellDef="let row">
+
+                <button mat-icon-button (click)="update(row)" style="color:green">
+         <span class="fa fa-edit"></span>
+      </button>
+                <button mat-icon-button (click)="delete(row.id)" color="warn">
+         <span class="fa fa-remove"></span>
+      </button>
+
+            </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+
+    </table>
+<mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</div>

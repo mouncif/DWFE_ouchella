@@ -1,0 +1,55 @@
+<form [formGroup]="service.form" (submit)="ajoutFournisseur()">
+    <div class="form-group">
+        <label for="nomfournisseur">nom fournisseur </label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Entrer nom" formControlName="nomfournisseur">
+    </div>
+
+    <div class="form-group">
+        <label for="nomcourtfournisseur">nom court </label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Entrer nom" formControlName="nomcourtfournisseur">
+    </div>
+
+    <div class="form-group">
+        <label for="villefournisseur">ville fournisseur </label>
+        <input type="text " class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Entrer  ville" formControlName="villefournisseur">
+    </div>
+
+    <div class="form-group">
+        <label for="Adressefournisseur">Adresse fournisseur </label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Entrer adresse" formControlName="Adressefournisseur">
+    </div>
+
+    <div class="form-group">
+        <label for="Telfournisseur"> Tel fournisseur </label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Entrer tel " formControlName="Telfournisseur">
+    </div>
+
+    <div class="form-group">
+        <label for="Telmobilefournisseur">tel </label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Entrer  tel" formControlName="Telmobilefournisseur">
+    </div>
+
+    <div class="form-group">
+        <label for="Faxfournisseur"> fax </label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Entrer fax" formControlName="Faxfournisseur">
+    </div>
+
+    <div class="form-group">
+        <label for="emailfournisseur"> email </label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Entrer email" formControlName="emailfournisseur">
+    </div>
+
+
+
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
